@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/pnlHeaderPanel"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/bg_blue">
+        <TextView android:text="@string/nav_drawer_item_ticket_prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/actionbar_tab_text_size"
+            android:layout_marginLeft="6dp" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pnlRootPanel"
+        android:layout_below="@+id/pnlHeaderPanel"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp">
+
+        <LinearLayout
+            android:id="@+id/pnlMainPanel"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView android:text="@string/lbl_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblFrom"
+                android:layout_marginTop="12dp"/>
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cmbFromStation"
+                android:layout_below="@+id/lblFrom"
+                android:hint="Start station"
+                android:maxLines="1"
+                android:layout_marginTop="10dp" />
+
+                <TextView android:text="@string/lbl_to"
+                    android:layout_below="@+id/cmbFromStation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblTo"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cmbFromStations"
+                android:layout_below="@+id/lblTo"
+                android:hint="End station"
+                android:autoText="false"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_ticket_prices"
+                android:id="@+id/btnGetTicketPrices"
+                android:background="@color/button_blue"
+                android:textColor="@color/white"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pnlTicketPrices"
+            android:layout_below="@+id/pnlMainPanel"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="6dp">
+            <TextView android:text="@string/lbl_ticket_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/layout_sub_header_size"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:text="@string/lbl_first_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             />
+            <EditText android:id="@+id/txtFirstClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/actionbar_tab_text_size"
+                android:enabled="false"/>
+            <TextView android:text="@string/lbl_second_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"/>
+            <EditText android:id="@+id/txtSecondClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/actionbar_tab_text_size"
+                    android:enabled="false"/>
+            <TextView android:text="@string/lbl_third_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"/>
+            <EditText android:id="@+id/txtThirdClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/actionbar_tab_text_size"
+                    android:enabled="false"/>
+            </LinearLayout>
+            </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+<!-- From: file:/D:/Projects/SLTrainSchedule%20-%20NEW/app/src/main/res/layout/fragment_ticket_prices.xml -->

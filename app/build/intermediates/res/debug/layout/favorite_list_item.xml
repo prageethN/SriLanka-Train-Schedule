@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Colombo to Kandy"
+        android:textSize="@dimen/layout_sub_header_size"
+        android:id="@+id/textView" />
+    <TextView android:text="@string/lbl_time_filter"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView android:text="Friday from"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+<!-- From: file:/D:/Projects/SLTrainSchedule%20-%20NEW/app/src/main/res/layout/favorite_list_item.xml -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_blue">#33b5e5</color>
+    <color name="bg_gray">#d6d6d6</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="button_blue" >#013ADF</color>
+    <color name="white" > #FFFFFFFF</color>
+
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#33b5e5</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+
+
+</resources>
