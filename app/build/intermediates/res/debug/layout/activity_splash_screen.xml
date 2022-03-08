@@ -1,7 +1,0 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.eightlabs.sltrainschedule.SplashScreenActivity">
-
-</FrameLayout>
-<!-- From: file:/D:/Projects/SLTrainSchedule%20-%20NEW/app/src/main/res/layout/activity_splash_screen.xml -->
